@@ -1,0 +1,13 @@
+INFO: Application Starting Application StartingApplication StartingApplication StartingApplication StartingApplication StartingApplication Starting
+ERROR: An error occuredAn error occuredAn error occuredAn error occuredAn error occuredAn error occuredAn error occuredAn error occuredAn error occured
+INFO: Application running
+ERROR: An error occured
+INFO: Application running
+ERROR: An error occured
+INFO: Application running
+INFO: Application running
+INFO: Application running
+INFO: Application running
+
+
+
