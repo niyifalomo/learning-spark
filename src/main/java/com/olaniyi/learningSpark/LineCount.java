@@ -11,7 +11,7 @@ public class LineCount {
     public static void main(String[] args){
 
         String logFile = "input/log.txt";
-        SparkSession spark = SparkSession.builder().appName("Line Counter").master("local[1]").getOrCreate();
+        SparkSession spark = SparkSession.builder().appName("Line Counter").master("local").getOrCreate();
         Dataset<String>  logData = spark.read().textFile(logFile).cache();
 
         long numErrors = logData.filter(line -> line.startsWith("ERROR")).count();
