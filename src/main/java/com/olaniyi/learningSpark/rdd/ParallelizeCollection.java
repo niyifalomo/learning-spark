@@ -12,7 +12,6 @@ import java.util.List;
  */
 public class ParallelizeCollection
 {
-
 	public static void main(String[] args)
 	{
 		String appName = "Parallelize Collection";
@@ -25,8 +24,6 @@ public class ParallelizeCollection
 		JavaRDD<Integer> distData = sparkContext.parallelize(data);
 		// add all elements in the distributed data
 		int sum = distData.reduce((a, b) -> a + b);
-
-		System.out.printf("Sum : %d \n", sum);
 
 	}
 }

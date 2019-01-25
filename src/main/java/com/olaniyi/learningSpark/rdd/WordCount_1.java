@@ -14,15 +14,14 @@ public class WordCount_1
 		String appName = "Word Count";
 		String clusterUrl = "local";
 		String inputFile = "input/log2.txt";
+
 		SparkConf conf = new SparkConf().setAppName(appName).setMaster(clusterUrl);
 		JavaSparkContext sparkContext = new JavaSparkContext(conf);
 
 		JavaRDD<String> distData = sparkContext.textFile(inputFile);
-		int wordCount = distData.map(s->s.split(" ").length).reduce((a,b)->(a+b));
+		int wordCount = distData.map(s -> s.split(" ").length).reduce((a, b) -> (a + b));
 
-		System.out.printf("Total number of words: %d\n",wordCount);
-
-
+		System.out.printf("Total number of words: %d\n", wordCount);
 
 	}
 }
