@@ -1,4 +1,4 @@
-package com.olaniyi.learningSpark;
+package com.olaniyi.learningSpark.examples;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.SparkSession;
